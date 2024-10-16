@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}My library{% endblock %}</title>
+</head>
+<body>
+    {% block pagename %}
+        <h1>Главная страница</h1>
+    {% endblock %}
+    {% block menu %}
+        <p><a href="http://127.0.0.1:8000/home/">Главная</a></p>
+        <p><a href="http://127.0.0.1:8000/home/catalog">Каталог книг</a></p>
+        <p><a href="http://127.0.0.1:8000/home/user">Мои книги</a></p>
+    {% endblock %}
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
